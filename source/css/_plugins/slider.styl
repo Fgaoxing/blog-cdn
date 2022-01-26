@@ -1,0 +1,134 @@
+.hide{
+  display: none;
+}
+.slider
+  display flex
+  align-items center
+ 
+#slider{
+  @media screen and (max-width: 800px){
+    display: none
+  }
+  border-radius:10px
+  position: relative;
+  overflow: hidden;
+  max-height:400px
+  margin-top:auto;
+}
+.slider-ul{
+  position: absolute;
+  width: 999999999px;
+  height: 100%;
+}
+.slider-ul-li{
+  width: 520px;
+  height: 100%;
+  display: inline-block;
+}
+.slider-ul-li-a, .slider-ul-li-a-img{
+  width: 100%;
+  height: 100%;
+}
+.slider-circlex{
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+.slider-circlex-ul{
+  display: inline-block;
+  border-radius: 8px;
+  background-color: red;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 2px;
+  font-size: 0;
+}
+.slider-circlex-ul-li{
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  background-color: #FFF;
+  border-radius: 50%;
+  margin: 0 4px;
+  cursor: pointer;
+}
+.slider-circlex-ul-li.active{
+  background-color: red;
+}
+.slider-btn{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  margin-top: -15px;
+}
+.slider-btn a{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, .5);
+}
+.slider-btn-next{
+  right: -5px;
+  border-radius: 50% 0 0 50%;
+}
+.slider-btn-prev{
+  left: -5px;
+  border-radius: 0 50% 50% 0;
+}
+.slider-btn-prev-span, .slider-btn-next-span{
+  display: inline-block;
+  width: 10px;
+  height: 20px;
+  margin-top: 4px;
+  position: relative;
+}
+.slider-btn-prev-span::after, .slider-btn-next-span::after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 7px;
+  height: 7px;
+  margin-top: -3.5px;
+}
+.slider-btn-prev-span::after{
+  border-left: 2px solid #FFF;
+  border-top: 2px solid #FFF;
+  transform: rotate(-45deg);
+  margin-left: -2px;
+}
+.slider-btn-next-span::after{
+  border-right: 2px solid #FFF;
+  border-bottom: 2px solid #FFF;
+  transform: rotate(-45deg);
+  margin-left: -7px;
+}
+.l_main .post-list {
+  margin-top: 15px
+  @media screen and (max-width: 800px) {
+    margin-top: 0px
+  }
+}
+.hot_post
+  display flex
+  flex 1
+  flex-direction column
+  margin-left 10px
+  @media screen and (max-width: 800px)
+    display none
+ 
+.index-banner
+  flex 1
+  font-size 0
+  &.forpadding
+    margin-top 10px
+ 
+.hot_post img
+  display inline-block
+  width 100%
+  border-radius 10px
+  height 145px
