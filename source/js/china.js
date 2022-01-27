@@ -4,7 +4,7 @@
     var month =date.getMonth();//0~11
     var day = date.getDate();//1-31
 
-    if(month===12&&day===13){
+    if(month===11&&day===13){
         var styleNode = document.createElement('style');
         styleNode['type'] = 'text/css' ;
         var cssText = `
