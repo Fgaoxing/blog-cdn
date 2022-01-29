@@ -30,7 +30,7 @@ function loadQexoFriends(id, url) {
                     var friends = res["data"];
                     document.getElementById(id).innerHTML = "";
                     for (let i = 0; i < friends.length; i++) {
-                        document.getElementById(id).innerHTML += '<li><a class="flat-box" title="' + friends[i]["name"] + ' target="_blank" rel="noopener" href="' + friends[i]["url"] + '" active-action="action-' + friends[i]["name"] + '"><div class="name"><img class="lazyload loaded" alt="哎呀，图片丢了" src="' + friends[i]["image"] + '" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-ll-status="loaded">' + friends[i]["name"] + '</div></a></li>'; 
+                        document.getElementById(id).innerHTML += '<li><a class="flat-box" title="' + friends[i]["description"] + '" target="_blank" rel="noopener" href="' + friends[i]["url"] + '" active-action="action-' + friends[i]["url"] + '"><div class="name"><img class="lazyload loaded" alt="哎呀，图片丢了" src="' + friends[i]["image"] + '" srcset="' + friends[i]["image"] + '" data-ll-status="loaded">' + friends[i]["name"] + '</div></a></li>'; 
                     }
                 } else {
                     alert("友链载入失败!");
