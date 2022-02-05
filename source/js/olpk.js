@@ -31,11 +31,12 @@ function lolinpike(id) {
                     for (let i = 0; i < list.length; i++) {
                         document.getElementById(id).innerHTML += '<div id="cards" class="card"><div class="i"> <div class="panel panel-block panel-block-sm panel-location"><div class="header"> <h3 class="name"><img class="flag" src="' + list[i]['flag'] + '"> ' + list[i]['country'] + ' <small>' + list[i]['country_en'] + '</small></h3></div><ul class="jingpai">     <li><span>金牌:' + list[i]['jin'] + '</span></li>        <li><span>银牌:' + list[i]['yin'] + '</span></li><li><span>铜牌:' + list[i]['tong'] + '</span></li></ul>  </div> </div></div><br>'; 
                     }
+                        document.getElementById(id).innerHTML += '<footer><!-----------  footer-----------><center><p>' + list[i]['update_time'] + '</p></center></footer>'
                 } else {
     document.getElementById(id).innerHTML = '<div class="qexo_loading"><div class="qexo_part"><div style="display: flex; justify-content: center"><div class="qexo_loader"><div class="qexo_inner one"></div><div class="qexo_inner two"></div><div class="qexo_inner three"></div></div></div></div><p style="text-align: center; display: block">获取失败...</p></div>';
                 }
             } else {
-    document.getElementById(id).innerHTML = '<div class="qexo_loading"><div class="qexo_part"><div style="display: flex; justify-content: center"><div class="qexo_loader"><div class="qexo_inner one"></div><div class="qexo_inner two"></div><div class="qexo_inner three"></div></div></div></div><p style="text-align: center; display: block">获取失败...</p></div>';
+    document.getElementById(id).innerHTML = '<div class="qexo_loading"><div class="qexo_part"><div style="display: flex; justify-content: center"><div class="qexo_loader"><div class="qexo_inner one"></div><div class="qexo_inner two"></div><div class="qexo_inner three"></div></div></div></div><p style="text-align: center; display: block">加载失败...</p></div>';
             }
         }
     };
