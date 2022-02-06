@@ -31,7 +31,7 @@
     var month =date.getMonth();//0~11
     var day = date.getDate();//1-31
 
-    if(month<=1){
+    if(month<2){
         var styleNode = document.createElement('script');
         styleNode['src'] = 'https://api.vvhan.com/api/denglong' ;
         var cssText = `
