@@ -32,6 +32,7 @@ function loadQexoFriends(id, url) {
                     for (let i = 0; i < friends.length; i++) {
                         document.getElementById(id).innerHTML += '<a class="friend-card" target="_blank" rel="external noopener friend" href="' + friends[i]["url"] + '" title="' + friends[i]["description"] + '"><div class="friend-left"><img class="avatar" src="' + friends[i]["image"] + '" alt="哎呀，图片丢了" height="60" width="60"></div><div class="friend-right"><p class="friend-name">' + friends[i]["name"] + '</p><div class="friend-tags-wrapper"><p class="tags">' + friends[i]["description"] + '</p></div></div></a>'; 
                     }
+                    document.getElementById(id).innerHTML += '<br>';
                 } else {
                     alert("友链载入失败!");
                 }
