@@ -37,7 +37,7 @@ function friend_api() {
             if (ajax.status == 200) {
                 var res = JSON.parse(ajax.response);
                 if (res["status"]) {
-                    alert("提交成功，请等待博主！");
+                    alert("提交成功，请等待博主确认！我们不再提醒你结果，谢谢！");
                 } else {
                     alert("友链申请失败 提示："+res["msg"]);
                 }
