@@ -15,7 +15,7 @@ function Memorial(){
         document.getElementsByTagName('head')[0].innerHTML += '<style type="text/css">html {filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);-webkit-filter: grayscale(1);}<style>'
 }};
 //判断是春节，显示小灯笼
-function year(){
+function lantern(){
     var date=new Date();
     if(date.getMonth()<2){
         document.getElementsByTagName('head')[0].innerHTML += '<script src="https://api.vvhan.com/api/denglong"><script>'
