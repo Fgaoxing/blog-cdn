@@ -1,0 +1,62 @@
+.recent-comments {
+    list-style: none;
+    float: left;
+    width: 100%;
+}
+
+.recent-comments-list > hr {
+    float: left;
+    width: 100%;
+}
+.avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    top: -20px;
+    transition: 1s; /* 定义旋转过渡时间 */
+    -webkit-transition: 1s;
+    -khtml-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    -ms-transition: 1s;
+}
+
+.avatar:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -khtml-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+}
+
+.vmeta > span {
+    display: inline-block;
+    margin-right: .25em;
+    padding: 2px 4px;
+    border-radius: .2em;
+    background: #f8f8f8;
+    color: #999;
+    font-size: 0.625em;
+    line-height: 1.5;
+    position: relative;
+}
+
+.recent-comments-list {
+    float: left;
+    padding: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+.recent-comments-left {
+    height: 95px;
+    float: left;
+    margin-right: 10px;
+}
+
+.name {
+    color: black;
+    font-size: 0.1em;
+}
