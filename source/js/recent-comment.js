@@ -11,7 +11,7 @@ function walinelast(id, url, count) {
         .then(function (json) {
             var html = '';
             for (var i = 0; i < json.length; i++) {
-                html += '<li class="recent-comments"><div class="recent-comments-left"><a href="i.html" style="text-decoration: none;"><div class="avatar"><img class="avatar" src="'+json[i].avatar+'"></div><span class="name">'+json[i].nick+'</span></a></div><div class="recent-comments-right"><div class="text" style="word-wrap:break-word"><p>'+json[i].comment+'</p></div><div class="vmeta" aria-hidden="true"><span>'+json[i].insertedAt.split('T')[0]+'</span><span>'+json[i].browser+'</span><span>'+json[i].os+'</span></div></div></li><hr>';
+                html += '<li class="recent-comments"><div class="recent-comments-left"><a href="'+json[i].link+'" style="text-decoration: none;"><div class="avatar"><img class="avatar" src="'+json[i].avatar+'"></div><span class="name">'+json[i].nick+'</span></a></div><div class="recent-comments-right"><div class="text" style="word-wrap:break-word"><p>'+json[i].comment+'</p></div><div class="vmeta" aria-hidden="true"><span>'+json[i].insertedAt.split('T')[0]+'</span><span>'+json[i].browser+'</span><span>'+json[i].os+'</span></div></div></li><hr>';
             }
             document.getElementById(id).innerHTML = html;
         })
