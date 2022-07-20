@@ -32,6 +32,7 @@ function loadQexoFriends(id, url) {
                     for (let i = 0; i < friends.length; i++) {
                         document.getElementById(id).innerHTML += '<li><a class="flat-box" title="' + friends[i]["description"] + '" target="_blank" rel="noopener" href="' + friends[i]["url"] + '" active-action="action-' + friends[i]["url"] + '"><div class="name"><img class="lazyload loaded" alt="哎呀，图片丢了" src="' + friends[i]["image"] + '" srcset="' + friends[i]["image"] + '" data-ll-status="loaded" height="20" width="20">' + friends[i]["name"] + '</div></a></li>'; 
                     }
+                    document.getElementById(id).innerHTML += '<h3 style="color: red;">不在支持该适配模式请到<a style="color: blue;" href="//github.com/Qexo/Qexo-Friends/wiki" target="_blank">新版本</a></h3>'
                 } else {
                     alert("友链载入失败!");
                 }
