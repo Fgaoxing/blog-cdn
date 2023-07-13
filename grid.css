@@ -84,7 +84,12 @@ body {
 }
 
 .left-nav > li > a:hover {
-    background-color: #0000000d;
+    background-color: #0a76fa;
+    color: #fff;
+}
+
+.dark .left-nav > li > a {
+    color: #fff;
 }
 
 .dark .left-nav > a {
