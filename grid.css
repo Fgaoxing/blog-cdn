@@ -6,6 +6,7 @@ body {
 
 .dark .card {
     background: #1f2937;
+    border-color: rgb(55 65 81);
     color: #fff;
 }
 
@@ -43,7 +44,6 @@ body {
 }
 
 .left-nav {
-    box-shadow: 0 0 20px 0 rgb(0 0 0 / 10%);
     position: fixed;
     left: 0;
     top: 0;
@@ -53,12 +53,15 @@ body {
     width: 200px;
     color: #334155;
     z-index: 99999;
+    box-shadow: 0 0 3px 0 rgb(0 0 0 / 8%);
 }
+
 
 .dark .left-nav {
     background: #1f2937;
     color: #fff;
 }
+
 
 .dark {
     background-color: #0f172a
@@ -79,13 +82,18 @@ body {
     border-radius: 5px;
 }
 
+.left-nav.hide {
+    display: block;
+    left: -200px;
+}
+
 .left-nav > li.this > a {
     color: #0a76fa;
 }
 
 .left-nav > li > a:hover {
-    background-color: #0a76fa;
-    color: #fff;
+    /*background-color: #0a76fa;*/
+    background-color: #bababa3d;
 }
 
 .dark .left-nav > li > a {
@@ -96,12 +104,22 @@ body {
     color: #fff;
 }
 
+/*.card-shadow .card {
+    border: 0;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 8%);
+}*/
+
 .card {
     background: #fff;
     border-radius: 5px;
     overflow: hidden;
     color: #334155;
-    box-shadow: 0 0 20px 0 rgb(0 0 0 / 8%);
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 0 3px 0 rgb(0 0 0 / 5%);
+}
+
+.no-margin {
+    margin: 0 !important;
 }
 
 * {
@@ -111,6 +129,10 @@ body {
 .grid {
     display: flex;
     flex-wrap: wrap;
+}
+
+.overflow-auto {
+    overflow: auto !important;
 }
 
 @media (min-width: 1312px) {
@@ -329,26 +351,6 @@ body {
     }
 }
 
-.table {
-    border: 0;
-    border-collapse: collapse;
-}
-
-.table > thead * {
-    border: 0;
-    background: #f6f9fc;
-    color: #8898aa;
-    padding: 10px;
-    text-align: left;
-
-}
-
-.table > tbody * {
-    background-color: #fff;
-    padding: 10px;
-    border: 0;
-}
-
 .input {
     padding: 0.75rem 1rem;
     border: 1px solid #E5E7EBFF;
@@ -400,7 +402,6 @@ body {
     border: 1px solid #E5E7EBFF;
     background-color: #fff;
     outline: none;
-    font-weight: bold;
     color: #4B5563;
 }
 
@@ -730,4 +731,44 @@ a {
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+
+.hide {
+    display: none;
+}
+
+table {
+    border-radius: 5px;
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+td.text-center, th.text-center {
+    text-align: center !important;
+}
+
+th, td {
+    font-size: .9rem;
+    padding: 10px;
+}
+
+tbody tr {
+    border-top: 1px solid #e9ecef;
+}
+
+.dark tbody tr {
+    border-top: 1px solid #374151;
+}
+
+tbody th {
+    text-align: unset;
+}
+
+thead th {
+    background-color: #f6f9fc;
+}
+
+.dark thead th {
+    background-color: #0f172a;
 }
